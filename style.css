@@ -14,6 +14,7 @@
    --blue: #16b3ff;
    --purple: #a816f5;
    --gradient: linear-gradient(90deg, var(--blue) 0%, var(--purple) 100%);
+   --gradientButtonHover: linear-gradient(90deg, #3cbdfd 0%, #b52cff 100%);
    --borderBlue: #6bceff;
 }
 
@@ -73,6 +74,12 @@ body {
    border: none;
    border-radius: 50px;
    background: var(--gradient);
+   transition: 0.2s;
+}
+
+.resultButton:hover {
+   background: var(--gradientButtonHover);
+   box-shadow: 0px 0px 5px var(--borderBlue);
 }
 
 .resultField {

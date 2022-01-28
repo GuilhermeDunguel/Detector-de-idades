@@ -24,9 +24,12 @@ function loadScript() {
       } else if (userAge <= 60) {
          image.src = 'assets/adulto.png'
          resultText.innerHTML = `Detectamos um <strong>adulto</strong> do gênero .<strong>masculino</strong> com <strong>${userAge}</strong> anos`
-      } else if (userAge >= 60) {
+      } else if (userAge <= 100) {
          image.src = 'assets/idoso.png'
          resultText.innerHTML = `Detectamos um <strong>idoso</strong> do gênero .<strong>masculino</strong> com <strong>${userAge}</strong> anos`
+      } else if (userAge > 100) {
+         image.src = 'assets/error.png'
+         resultText.innerHTML = `ERRO DE INTERPRETAÇÃO: <strong>Insira um ano válido!</strong>`
       }
    } else {
 
@@ -45,9 +48,12 @@ function loadScript() {
       } else if (userAge <= 60) {
          image.src = 'assets/adulta.png'
          resultText.innerHTML = `Detectamos uma <strong>adulta</strong> do gênero .<strong>masculino</strong> com <strong>${userAge}</strong> anos`
-      } else if (userAge >= 60) {
+      } else if (userAge <= 100) {
          image.src = 'assets/idosa.png'
          resultText.innerHTML = `Detectamos uma <strong>idosa</strong> do gênero .<strong>masculino</strong> com <strong>${userAge}</strong> anos`
-      }
+      } else if (userAge > 100) {
+         image.src = 'assets/error.png'
+         resultText.innerHTML = `ERRO DE INTERPRETAÇÃO: <strong>Insira um ano válido!</strong>`
+      } 
    }
 }
