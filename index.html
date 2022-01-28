@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Guilherme Dunguel">
+   <meta meta="description" content="Página de estudos de JavaScript">
+   <link rel="stylesheet" href="style.css">
+   <title>Testador de Idades</title>
+</head>
+<body>
+   <main class="container">
+      <section class="container-header">
+         <h1>Testador de Idades</h1>
+      </section>
+      <section class="container-main">
+         <label for="userYear">Ano de nascimento</label>
+         <input name="userYear" id="userYear" type="number" placeholder="Digite o ano" >
+         <label for="userGenre">Gênero</label>
+         <select name="userGenre" id="userGenre">
+            <option value="genreMasculine">Masculino</option>
+            <option value="genreFeminine">Feminino</option>
+         </select>
+         <button class="resultButton" onclick="loadScript()" type="submit">Testar</button>
+      </section>
+      <section class="resultField">
+         <img id="resultImage" src="" alt="">
+         <p id="resultText"></p>
+      </section>
+      <section class="container-footer">
+         <div class="socialLinks">
+            <a href="#" target="_blank"><img class="githubLogo" src="assets/github.png" alt="linkGithub"></a>
+            <a href="#" target="_blank"><img class="linkedinLogo" src="assets/linkeding.png" alt="linkLinkedin"></a>
+         </div>
+         <h2>Criado por Guilherme Dunguel</h2>
+      </section>
+      <script src="script.js"></script>
+   </main>
+</body>
+</html>
